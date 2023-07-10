@@ -4,7 +4,7 @@ const mapArrToString = require('../mapArrToStrings/mapArrToStrings');
 
 const getData = async () => {
     const res = await axios.get('https://jsonplaceholder.typicode.com/users')
-    const IDs = res.data.map(user => user.id);
+    const Ids = res.data.map(user => user.id);
 
     return mapArrToString(IDs);
 };
